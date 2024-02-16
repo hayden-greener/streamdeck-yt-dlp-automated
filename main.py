@@ -90,6 +90,9 @@ def download_video(url, output_path, download_type):
         
 # --- Get most recently changed project folder ---
 def get_most_recently_changed_project_folder(root_dir, *extra_subfolders):
+    if not extra_subfolders:
+        return root_dir
+
     most_recent_project = None
     max_file_mtime = 0
 

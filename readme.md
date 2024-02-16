@@ -43,4 +43,11 @@ python script_path/main.py "video_projects_dir" "audio_subfolder" --type audio
 
 This command downloads an audio file from the clipboard URL to the most recently modified project in the audio subfolder.
 
+```bash
+python script_path/main.py "video_projects_dir" --type audio
+```
+
+This command downloads a audio file from the clipboard URL directly to the root directory specified by "video_projects_dir", ignoring any subfolders.
+
+
 Replace `script_path`, `video_projects_dir`, `footage_subfolder`, and `audio_subfolder` with your actual paths and names.
