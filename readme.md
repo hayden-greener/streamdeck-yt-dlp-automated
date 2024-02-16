@@ -2,6 +2,8 @@
 
 Streamdeck-YT-DLP Automated is a Python command-line utility for downloading video or audio from a URL copied to the clipboard. It's designed to be compatible with devices like a Stream Deck for easy operation.
 
+This script interacts with your system's clipboard. While it utilizes windll calls through ctypes for a generally secure approach, there's always a potential for compatibility issues with certain programs.
+
 ## Prerequisites
 
 Ensure you have the following installed on your local machine:

@@ -56,6 +56,8 @@ def download_video(url, output_path, download_type):
         command.insert(5, '0')
         print("\n" + "=" * 20)
         print("DOWNLOADING AUDIO")
+        print("Please be patient, this may take a while depending on the size of the audio.")
+        print("WARNING: Ensure you have the rights to download and use this audio.")
         print("=" * 20 + "\n")
     else:  # Default to video if not specified or not 'audio'
         command.insert(1, '-S')
@@ -64,6 +66,8 @@ def download_video(url, output_path, download_type):
         command.insert(4, 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4')
         print("\n" + "=" * 20)
         print("DOWNLOADING VIDEO")
+        print("Please be patient, this may take a while depending on the size of the video.")
+        print("WARNING: Ensure you have the rights to download and use this video.")
         print("=" * 20 + "\n")
 
     # Print the command for debugging
@@ -77,6 +81,11 @@ def download_video(url, output_path, download_type):
     finally:
         # Open the output directory in the file explorer
         os.startfile(os.path.dirname(output_path))
+
+    # Print watermark
+    print("\n" + "=" * 20)
+    print("This tool was created by LightMind")
+    print("=" * 20 + "\n")
 
         
 # --- Get most recently changed project folder ---
